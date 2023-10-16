@@ -10,8 +10,8 @@ int main(void)
 	int n;
 
 	srand(time(0));
-n = rand() - RAND_MAX / 2;
 int lastdigit;
+n = rand() - RAND_MAX / 2;
 lastdigit = abs (n);
 while (lastdigit >= 10)
 { lastdigit = lastdigit % 10; }
