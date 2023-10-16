@@ -7,26 +7,26 @@
  */
 int main(void)
 {
-	int n;
-    int lastdigit;
+int n;
+int lastd;
 
 	srand(time(0));
 n = rand() - RAND_MAX / 2;
-lastdigit = abs(n);
-while (lastdigit >= 10)
-{ lastdigit = lastdigit % 10; }
+lastd = abs(n);
+while (lastd >= 10)
+{ lastd = lastd % 10; }
 
-if (lastdigit > 5 && n > 0)
-{printf("Last digit of %d is %d and is greater than 5\n", n, lastdigit); }
+if (lastd > 5 && n > 0)
+{printf("Last digit of %d is %d and is greater than 5\n", n, lastd); }
 
 else if (lastdigit == 0)
-{printf("Last digit of %d is %d and is 0\n", n, lastdigit); }
+{printf("Last digit of %d is %d and is 0\n", n, lastd); }
 
-else if (n<0)
-{printf("Last digit of %d is -%d and is less than 6 and not 0\n", n, lastdigit); }
+else if (n < 0)
+{printf("Last digit of %d is -%d and is less than 6 and not 0\n", n, lastd); }
 
 else
-{printf("Last digit of %d is %d and is less than 6 and not 0\n", n, lastdigit); }
+{printf("Last digit of %d is %d and is less than 6 and not 0\n", n, lastd); }
 
 return (0);
 
