@@ -2,17 +2,17 @@
 #include <time.h>
 #include <stdio.h>
 /**
-*main-checks if positive
-*Return: 0
+ *main-checks if positive
+ *Return: 0
  */
 int main(void)
 {
 	int n;
 
 	srand(time(0));
-int lastdigit;
 n = rand() - RAND_MAX / 2;
-lastdigit = abs (n);
+int lastdigit;
+lastdigit = abs(n);
 while (lastdigit >= 10)
 { lastdigit = lastdigit % 10; }
 
