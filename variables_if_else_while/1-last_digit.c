@@ -16,7 +16,7 @@ lastdigit = abs(n);
 while (lastdigit >= 10)
 { lastdigit = lastdigit % 10; }
 
-if (lastdigit > 5)
+if (lastdigit > 5 && n > 0)
 {printf("Last digit of %d is %d and is greater than 5\n", n, lastdigit); }
 
 else if (lastdigit == 0)
