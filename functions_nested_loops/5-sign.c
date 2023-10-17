@@ -8,7 +8,6 @@
 int print_sign(int n)
 
 {
-
 	if (n > 0)
 
 	{
@@ -16,7 +15,7 @@ int print_sign(int n)
 		return (1);
 	}
 
-	else if ((n <= 1) && (n > -1))
+	else if (n == 0)
 	{
 		putchar('0');
 		return (0);
@@ -27,4 +26,6 @@ int print_sign(int n)
 		putchar('-');
 		return (-1);
 	}
+
+	return (0);
 }
