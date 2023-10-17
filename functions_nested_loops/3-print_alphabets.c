@@ -1,23 +1,16 @@
-#include <stdio.h>
+#include "main.h"
 
-/**
- *main-checks if positive
- *Return: 0
- */
+int _islower(int c)
 
-int main(void)
 {
-char ch;
-for (ch = 'a'; ch <= 'z'; ch++)
-{
-putchar(ch);
-}
-for (ch = 'A'; ch <= 'Z'; ch++)
-{
-putchar(ch);
-}
 
-putchar('\n');
+	if (c <= 97 && c >= 122)
+	{
+		return (1);
+	}
 
-return (0);
+	else
+	{
+		return (0);
+	}
 }
