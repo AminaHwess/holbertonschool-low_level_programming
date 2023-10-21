@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * isupper - Entry point
+ * _isupper - Entry point
  *@c : integer
  * Return: void (Success)
  */
