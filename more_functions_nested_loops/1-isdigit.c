@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * isalpha - check for a digit
+ * _isdigit - check for a digit
  *@c : integer
  * Return: Always 0.
  */
