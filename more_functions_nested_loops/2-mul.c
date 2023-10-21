@@ -2,7 +2,8 @@
 
 /**
  * mul - check for a digit
- *@c : integer
+ *@a : integer
+ *@b : integer
  * Return: Always 0.
  */
 
