@@ -6,17 +6,17 @@
  * Return: Always 0.
  */
 
-void print_numbers(int c)
+void print_numbers(void)
 {
 
+int c;
 
 for (c = 0 ; c <= 9 ; c++)
 
 {
-putchar('0' + c);
+_putchar(c + '0');
 }
 
-putchar('\n');
+_putchar('\n');
 
-return (0);
 }
