@@ -1,18 +1,14 @@
 #include "main.h"
 /**
- * _isupper - Entry point
+ * _islower - Entry point
  *@c : integer
  * Return: void (Success)
  */
 
-
-
-
-
-int _isupper(int c);
+int _isupper(int c)
 {
 
-	if (c >= 97 && c <= 122)
+	if (c >= 97 && c <= 122)  
 	{
 		return (1);
 	}
