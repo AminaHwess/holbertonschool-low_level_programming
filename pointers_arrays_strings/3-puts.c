@@ -2,18 +2,19 @@
 #include <stdio.h>
 
 /**
- * puts - print a string
- * str : char
+ * _puts - print a string
+ * @str : char
  * Return: Always 0.
  */
 
 void _puts(char *str)
 {
 
-while(*str != '\0')
+	while (*str != '\0')
 
-{putchar (*str);
- str ++; 
-}
-putchar('\n');
+	{
+		putchar(*str);
+		str++;
+	}
+	putchar('\n');
 }
