@@ -3,9 +3,9 @@
 #include <string.h>
 /**
  * *_strncpy -a function that copies a string.
- * @dest: the string
- * @src: the string
- * @n: int byte
+ * @dest:  string
+ * @src:  string
+ * @n: int
  * Return: string value
  */
 char *_strncpy(char *dest, char *src, int n)
