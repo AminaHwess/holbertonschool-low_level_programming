@@ -21,7 +21,6 @@ char *_strdup(char *str)
 	{
 		n++;
 	}
-	
 
 	printf("%s", str);
 	str = malloc(sizeof(char) * n + 1);
