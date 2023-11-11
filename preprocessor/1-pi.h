@@ -1,0 +1,6 @@
+#ifndef PREPROCESSOR
+#define PREPROCESSOR
+
+#define PI 3.14159265359
+
+#endif /* PREPROCESSOR */
