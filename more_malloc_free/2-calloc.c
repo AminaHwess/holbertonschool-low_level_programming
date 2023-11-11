@@ -29,13 +29,11 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 	}
 
-	else
-	{
 		for (i = 0; i < nmemb * size; i++)
 		{
 			array[i] = 0;
 		}
-	}
+
 
 	return (array);
 }
