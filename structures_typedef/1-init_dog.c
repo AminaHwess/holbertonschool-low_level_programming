@@ -1,5 +1,6 @@
-#include <stdio.h>
 #include "dog.h"
+#include <stdio.h>
+
 /**
  * struct dog - check the code
  * Return: void.
