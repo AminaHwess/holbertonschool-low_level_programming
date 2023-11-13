@@ -2,7 +2,11 @@
 #include <stdio.h>
 
 /**
- * struct dog - check the code
+ * init_dog - check the code
+ * @d : struct
+ * @name : char
+ * @age : float
+ * @owner : char
  * Return: void.
  */
 
