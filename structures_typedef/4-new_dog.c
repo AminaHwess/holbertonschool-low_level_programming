@@ -9,7 +9,6 @@
  * @owner : char
  * Return: void.
  */
-
 dog_t *new_dog(char *name, float age, char *owner)
 {
 
@@ -24,20 +23,40 @@ dog_t *new_dog(char *name, float age, char *owner)
 	d->name = malloc(sizeof(char) * (strlen(name) + 1));
 	if (d->name == NULL)
 	{
-		return (NULL);
 		free(d);
+		return (NULL);
 	}
 
 	d->owner = malloc(sizeof(char) * (strlen(owner) + 1));
 	if (d->owner == NULL)
 	{
-		return (NULL);
 		free(d);
-		free(d->owner);
+		free(d->name);
+		return (NULL);
 	}
 
-	strcpy(d->name, name);
+	_strcpy(d->name, name);
 	d->age = age;
-	strcpy(d->owner, owner);
+	_strcpy(d->owner, owner);
 	return (d);
+}
+
+/**
+ * *_strcpy - copy a string
+ * @src : char
+ * @dest : char
+ * Return: dest.
+ */
+
+char *_strcpy(char *dest, char *src)
+{
+	int i = -1;
+
+	do
+	{
+		i++;
+		dest[i] = src[i];
+	} while (src[i] != '\0');
+
+	return (dest);
 }
