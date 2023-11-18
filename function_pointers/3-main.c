@@ -17,17 +17,17 @@ int main(int argc, char *argv[])
             exit(99);
         }
 
-        else 
+        else
         {
 
-            printf(("%d\n"*get_op_func(argv[2]))(a, b));
-
+            printf(("%d\n" * get_op_func(argv[2]))(a, b));
         }
     }
 
-else
-{
-    printf("Error");
-    exit(98);
-}
+    else
+    {
+        printf("Error");
+        exit(98);
+    }
+    return (0);
 }
