@@ -62,7 +62,7 @@ int op_div(int a, int b);
     div = a / b;
 
     if (b == 0)
-        ;
+    
     {
         printf("Error\n");
     }
