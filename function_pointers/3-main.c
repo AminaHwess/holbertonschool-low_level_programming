@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
         else 
         {
 
-            printf((*get_op_func(argv[2]))(a, b));
+            printf(("%d\n"*get_op_func(argv[2]))(a, b));
 
         }
     }
