@@ -4,87 +4,72 @@
  * op_add - returns the sum of a and b
  * @a: int
  *@b: int
- *@add : int
- * Return: add.
+ * Return: a + b.
  */
 
 int op_add(int a, int b);
 {
-    int add;
-    add = a + b;
-    return (add);
+
+    return (a + b);
 }
 
 /**
  * op_sub - returns the difference of a and b
  * @a: int
  *@b: int
- *@sub : int
- * Return: sub.
+ * Return: a - b.
  */
 
 int op_sub(int a, int b);
 {
 
-    sub = a - b;
-    return (sub);
+    return (a - b);
 }
 
 /**
  * op_mul -  returns the product of a and b
  * @a: int
  *@b: int
- *@mul : int
- * Return: mul.
+ * Return: a * b.
  */
 
 int op_mul(int a, int b);
 
 {
-    int mul;
-    mul = a * b;
-    return (mul);
+    return (a * b);
 }
 
 /**
  * op_div -  returns the result of the division of a by b
  * @a: int
  *@b: int
- *@div : int
- * Return: div.
+ * Return: a / b.
  */
 
 int op_div(int a, int b);
 
 {
-    int div;
-    div = a / b;
-
     if (b == 0)
-    
+
     {
         printf("Error\n");
     }
     else
     {
 
-        return (div);
+        return (a / b);
     }
 }
-
 
 /**
  * op_mod -   returns the remainder of the division of a by b
  * @a: int
  *@b: int
- *@mod : int
- * Return: mod.
+ * Return: a % b.
  */
 
 int op_mod(int a, int b);
 {
-    int mod;
-    mod = a % b;
 
     if (b == 0)
     {
@@ -92,8 +77,6 @@ int op_mod(int a, int b);
     }
     else
     {
-
-        return (mod);
+        return (a % b);
     }
 }
-
