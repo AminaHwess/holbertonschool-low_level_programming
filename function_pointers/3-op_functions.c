@@ -1,5 +1,4 @@
-#ifndef FUNCTION_POINTERS
-#define FUNCTION_POINTERS
+#include "3-calc.h"
 
 /**
  * op_add - returns the sum of a and b
@@ -98,4 +97,3 @@ int op_mod(int a, int b);
     }
 }
 
-#endif /* FUNCTION_POINTERS */
