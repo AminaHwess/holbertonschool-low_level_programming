@@ -4,9 +4,9 @@
 #include "lists.h"
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * print_list - check the code
+ * @h: ptr
+ * Return: i.
  */
 
 size_t print_list(const list_t *h)
