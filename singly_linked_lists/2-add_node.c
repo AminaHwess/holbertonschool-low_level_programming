@@ -17,16 +17,16 @@ list_t *add_node(list_t **head, const char *str)
 
 	if (firstnode == NULL)
 	{
-		return (NULL);
 		free(firstnode);
+		return (NULL);
 	}
 
 	firstnode->str = strdup(str);
 
 	if (firstnode->str == NULL)
 	{
-		return (NULL);
 		free(firstnode);
+		return (NULL);
 	}
 
 	firstnode->len = strlen(firstnode->str);
