@@ -21,11 +21,13 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 	}
 	lastnode->n = n;
 	lastnode->next = NULL;
+	lastnode->prev = NULL;
 
 	if (!*head)
 	{
 		*head = lastnode;
 		lastnode->prev = NULL;
+		lastnode->next = NULL;
 	}
 
 	else
@@ -38,6 +40,7 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 			ptr = ptr->next;
 		}
 		ptr->next = lastnode;
+		lastnode->prev = ptr;
 	}
 	return (lastnode);
 }
