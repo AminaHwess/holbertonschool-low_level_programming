@@ -21,7 +21,12 @@ int sum_dlistint(dlistint_t *head)
 		return (0);
 	}
 
-	else
+	if (ptr || ptr->next == NULL)
+	{
+		sum = ptr->n;
+	}
+
+	if (ptr)
 	{
 
 		while (ptr->next != NULL)
