@@ -25,12 +25,13 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 	sz = read(fd, buff, letters);
-	write(1, buff, sz);
 
 	if (sz == -1)
 	{
 		return (0);
 	}
+
+	write(1, buff, sz);
 
 	close(fd);
 
