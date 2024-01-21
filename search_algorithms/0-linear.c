@@ -24,11 +24,11 @@ int linear_search(int *array, size_t size, int value)
 		{
 			return (j);
 		}
-	}
 
-	if (array[j] != value)
-	{
-		return (-1);
+		if (!value)
+		{
+			return (-1);
+		}
 	}
 
 	return (j);
